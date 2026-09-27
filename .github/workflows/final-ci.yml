@@ -1,0 +1,11 @@
+name: final-ci
+# CI "diferido": NO corre en pull_request ni push; solo cuando se dispara a mano
+# al conceder turno. Simula validar la combinación (HEAD, base) antes del merge.
+on:
+  workflow_dispatch:
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "validacion diferida OK sobre $GITHUB_SHA"
