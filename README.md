@@ -7,3 +7,4 @@ mantiene el gate por (HEAD, base). Se BORRA al terminar. No contiene nada real.
 cambio A
 
 D1
+D2
